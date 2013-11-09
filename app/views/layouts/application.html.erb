@@ -21,13 +21,29 @@
   </head>
 
   <body>
+    <section class="main">
+      <div class="row">
+        <div class="large-6 columns">
+          <h1>
+            <%= link_to "Drewblr", root_path %>
+            <small>// Photo Blog</small>
+          </h1>
+        </div>
+        <div class="large-6 columns">
+          <ul class="breadcrumbs right top">
+            <li><%= link_to "Home", "/" %></li>
+            <li><%= link_to "About", "/about" %></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="large-6 large-centered columns">
+          <%= yield %>
+        </div>
+      </div>
 
-     <%= link_to "Home", "/" %>
-     <%= link_to "About", "/about" %>
-
-    <%= yield %>
-
-
+    </section>
     <%= javascript_include_tag "application" %>
   </body>
 </html>

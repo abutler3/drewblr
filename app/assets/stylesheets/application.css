@@ -12,4 +12,15 @@
  *= require foundation_and_overrides
  *= require_tree .
  */
+.main {
+  width: 80%;
+  margin: 0 auto;
+}
 
+.docs_header {
+  width: 20%;
+}
+
+.top {
+  margin-top: 20px;
+}
