@@ -12,6 +12,8 @@
  *= require foundation_and_overrides
  *= require_tree .
  */
+ textarea { min-height: 300px; }
+
 .main {
   width: 80%;
   margin: 0 auto;
@@ -24,3 +26,4 @@
 .top {
   margin-top: 20px;
 }
+

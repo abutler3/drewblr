@@ -1,9 +1,5 @@
-<h1>Welcome</h1>
-
-<p>
-  This is the landing page for Drewblr, a photo blog from Drew Butler made using Ruby on Rails.
-</p>
-
-<p>
-This page is just a placeholder. Later on, we'll replace it with the posts in our blog.
-</p>
+ <% @posts.each do |post| %>
+    <%= render 'posts/post', post: post %>
+    <hr>
+    <br>
+ <% end %>
