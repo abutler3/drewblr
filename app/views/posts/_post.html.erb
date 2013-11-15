@@ -5,7 +5,8 @@
     <div class="right">
       <%= form_for(Heart.new) do |f| %>
         <%= f.hidden_field :post_id, value: post.id %>
-        <%= image_submit_tag("heart.png", class: "heart") %>
+        <%#= image_submit_tag("heart.png", class: "heart") %>
+        <%= f.submit "♥", class: "tiny button alert" %>
       <% end %>
     </div>
   </h2>
