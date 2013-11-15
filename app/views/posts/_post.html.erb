@@ -1,4 +1,14 @@
-  <h2><%= link_to post.title, post %></h2>
+  <h2>
+
+    <%= link_to post.title, post %>
+
+    <div class="right">
+      <%= form_for(Heart.new) do |f| %>
+        <%= f.hidden_field :post_id, value: post.id %>
+        <%= image_submit_tag("heart.png", class: "heart") %>
+      <% end %>
+    </div>
+  </h2>
   <p class="radius secondary label">Written at <%= post.created_at.to_formatted_s(:long) %></p>
 
   <p>
@@ -8,3 +18,7 @@
       <%= simple_format(post.content) %>
     <% end %>
   </p>
+
+  <small class="right">
+    <%= post.hearts.count %> Hearts
+  </small>
