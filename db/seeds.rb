@@ -5,6 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+# rake db:seed. On heroku run rake db:seed
 #Cheesecake
 # post1 = Post.new
 # post1.title = ""
